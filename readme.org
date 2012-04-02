@@ -1,0 +1,15 @@
+#+TITLE: Sample org-publish-project-alist
+
+#+begin_src emacs-lisp :exports code :results silent
+  (setq org-publish-project-alist
+        '(
+          ("blog-html"
+           :base-directory "~/org-test/"
+           :publishing-directory "~/org-test/gh-pages/"
+           :publishing-function org-publish-org-to-html
+           :recursive t
+           :author "Selman Uluğ"
+           :author-info t
+           :email "selman.ulug@gmail.com"
+           :email-info t)))
+#+end_src
