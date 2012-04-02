@@ -3,9 +3,9 @@
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Main</title>
+<title>Sample org-publish-project-alist</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="title" content="Main"/>
+<meta name="title" content="Sample org-publish-project-alist"/>
 <meta name="generator" content="Org-mode"/>
 <meta name="generated" content="2012-04-02 12:46:06 EEST"/>
 <meta name="author" content="Selman Uluğ"/>
@@ -91,10 +91,25 @@
 </div>
 
 <div id="content">
-<h1 class="title">Main</h1>
+<h1 class="title">Sample org-publish-project-alist</h1>
 
-<p><a href="readme.html">Sample org-publish-project-alist</a>
-</p></div>
+
+
+
+<pre class="src src-emacs-lisp">(setq org-publish-project-alist
+      '(
+        (<span style="color: #ffa07a;">"blog-html"</span>
+         <span style="color: #b0c4de;">:base-directory</span> <span style="color: #ffa07a;">"~/org-test/"</span>
+         <span style="color: #b0c4de;">:publishing-directory</span> <span style="color: #ffa07a;">"~/org-test/gh-pages/"</span>
+         <span style="color: #b0c4de;">:publishing-function</span> org-publish-org-to-html
+         <span style="color: #b0c4de;">:recursive</span> t
+         <span style="color: #b0c4de;">:author</span> <span style="color: #ffa07a;">"Selman Ulu&#287;"</span>
+         <span style="color: #b0c4de;">:author-info</span> t
+         <span style="color: #b0c4de;">:email</span> <span style="color: #ffa07a;">"selman.ulug@gmail.com"</span>
+         <span style="color: #b0c4de;">:email-info</span> t)))
+</pre>
+
+</div>
 
 <div id="postamble">
 <p class="date">Date: 2012-04-02 12:46:06 EEST</p>
